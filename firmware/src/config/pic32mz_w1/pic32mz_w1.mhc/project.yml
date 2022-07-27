@@ -8994,13 +8994,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 9637646B5A6E9B40DB177E9B603B68DD
-- generatedChecksum: 38FFB363A72C6ADD26EF6612C2ECDB1F
+- generatedChecksum: CA7F2C954C9E5F7F34F3A3E6EC1E3932
   logicalPath: config/pic32mz_w1/peripheral/spi/spi_master
   name: plib_spi1_master.c
   physicalPath: peripheral/spi/spi_master
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 38FFB363A72C6ADD26EF6612C2ECDB1F
+  userChecksum: CA7F2C954C9E5F7F34F3A3E6EC1E3932
 - generatedChecksum: 2FBC096B9C841EF4A53C30B2F830960B
   logicalPath: config/pic32mz_w1/peripheral/uart
   name: plib_uart1.c
@@ -9211,13 +9211,13 @@ files:
   security: NON_SECURE
   type: SOURCE
   userChecksum: 229A95E2DEE941362921261A6468616D
-- generatedChecksum: D344970484843F3B1A4C252BC9530049
+- generatedChecksum: F71880A3AD145435B8DD261D4A1F69A1
   logicalPath: config/pic32mz_w1
   name: tasks.c
   physicalPath: ''
   security: NON_SECURE
   type: SOURCE
-  userChecksum: 0CCD2694EF2C14A3F88CBDE0A0164697
+  userChecksum: 09C57682CE1E08CF9E4B01A4E22C7F3A
 - generatedChecksum: 7018715B02E090D5ED53EAE0DF359928
   logicalPath: config/pic32mz_w1/library/cryptoauthlib/tng
   name: tflxtls_cert_def_4_device.c
@@ -11206,13 +11206,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 4C4023A59DE8AA4BAB1D1CD49179586D
-- generatedChecksum: 4ACFDBE5B4BCC9D436642BEF7EE97B04
+- generatedChecksum: FFED2E31C2FC950AAF4A64674B37C96E
   logicalPath: config/pic32mz_w1
   name: configuration.h
   physicalPath: ''
   security: NON_SECURE
   type: HEADER
-  userChecksum: 4ACFDBE5B4BCC9D436642BEF7EE97B04
+  userChecksum: FFED2E31C2FC950AAF4A64674B37C96E
 - generatedChecksum: B3D283C3F215FEC32210C628C4D7F044
   logicalPath: third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/inc/asc_security_core/utils
   name: containerof.h
@@ -11458,13 +11458,13 @@ files:
   security: NON_SECURE
   type: HEADER
   userChecksum: 187EFA39553617C34D670BFA3AA15C5F
-- generatedChecksum: 6E11D27FFFCF7C7BB6AE5B10AD60786C
+- generatedChecksum: 9F4DBFA9DB71BC032616F80B06BF53B7
   logicalPath: config/pic32mz_w1/system/fs/fat_fs/file_system
   name: ffconf.h
   physicalPath: system/fs/fat_fs/file_system
   security: NON_SECURE
   type: HEADER
-  userChecksum: 6E11D27FFFCF7C7BB6AE5B10AD60786C
+  userChecksum: 9F4DBFA9DB71BC032616F80B06BF53B7
 - generatedChecksum: C764604C328C24B806E9E8189F3F7E53
   logicalPath: third_party/azure_rtos/netxduo/addons/azure_iot/azure_iot_security_module/iot-security-module-core/inc/asc_security_core/model/schema
   name: flatbuffers_common_builder.h
@@ -13018,7 +13018,7 @@ files:
   physicalPath: ../../azure_rtos_demo/sample_azure_iot_embedded_sdk
   security: NON_SECURE
   type: HEADER
-  userChecksum: 7AEC2F56C2B5E2FA1D1C363B68DE9311
+  userChecksum: 5423E1B68F276BAAE9E8FF40DB2F2D62
 - generatedChecksum: 9E71D345C6F5A276C502502C87316EA5
   logicalPath: config/pic32mz_w1/usb
   name: scsi.h

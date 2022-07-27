@@ -30,9 +30,9 @@ extern   "C" {
     
 #define DEVICE_SYMMETRIC_KEY           default_primary_key           
     
-#define NX_AZURE_IOT_STACK_SIZE                (4096)
+#define NX_AZURE_IOT_STACK_SIZE                (2048)
 #define NX_AZURE_IOT_THREAD_PRIORITY           (4) 
-#define SAMPLE_STACK_SIZE                      (4096)
+#define SAMPLE_STACK_SIZE                      (2048)
 #define SAMPLE_THREAD_PRIORITY                 (16)
 #define MAX_PROPERTY_COUNT                     (2)
 

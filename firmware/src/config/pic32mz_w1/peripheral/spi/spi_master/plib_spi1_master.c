@@ -81,7 +81,7 @@ void SPI1_Initialize ( void )
     IFS1CLR = 0x20;
 
     /* BAUD Rate register Setup */
-    SPI1BRG = 49;
+    SPI1BRG = 1;
 
     /* CLear the Overflow */
     SPI1STATCLR = _SPI1STAT_SPIROV_MASK;

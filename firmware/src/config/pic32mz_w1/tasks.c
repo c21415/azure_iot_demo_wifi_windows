@@ -181,8 +181,6 @@ static void _WDRV_PIC32MZW_Tasks(ULONG thread_input)
     }
 }
 
-
-
 void tx_application_define(void* first_unused_memory)
 {
     /* Create a byte memory pool from which to allocate the thread stacks. */
@@ -190,6 +188,7 @@ void tx_application_define(void* first_unused_memory)
 
     /* Maintain system services */
     
+
     tx_byte_allocate(&byte_pool_0,
         (VOID **) &_SYS_CMD_Task_Stk_Ptr,
         SYS_CMD_RTOS_STACK_SIZE,
@@ -318,7 +317,7 @@ void tx_application_define(void* first_unused_memory)
     /* Allocate the stack for _APP threads */
     tx_byte_allocate(&byte_pool_0,
         (VOID **) &_APP_Task_Stk_Ptr,
-        4096,
+        2048,
         TX_NO_WAIT
     );
 
@@ -328,7 +327,7 @@ void tx_application_define(void* first_unused_memory)
         _APP_Tasks,
         0,
         _APP_Task_Stk_Ptr,
-        4096,
+        2048,
         1,
         1,
         TX_NO_TIME_SLICE,
@@ -353,8 +352,6 @@ void tx_application_define(void* first_unused_memory)
         TX_NO_TIME_SLICE,
         TX_AUTO_START
     );
-
-
 }
 
 // *****************************************************************************
