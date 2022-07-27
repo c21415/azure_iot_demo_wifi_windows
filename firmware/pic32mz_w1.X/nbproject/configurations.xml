@@ -1041,7 +1041,7 @@
                 <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_harmony_init.c</itemPath>
                 <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_gpio_harmony.c</itemPath>
                 <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_pic32_delay.c</itemPath>
-                <itemPath>../../../../../../Microchip/Harmony3/cryptoauthlib/lib/hal/hal_threadx.c</itemPath>
+                <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/hal/hal_threadx.c</itemPath>
               </logicalFolder>
               <logicalFolder name="f7" displayName="host" projectFiles="true">
                 <itemPath>../src/config/pic32mz_w1/library/cryptoauthlib/host/atca_host.c</itemPath>
