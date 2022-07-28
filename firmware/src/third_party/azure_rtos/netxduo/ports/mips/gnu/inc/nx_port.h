@@ -70,8 +70,8 @@
 /* Define various constants for the port.  */ 
 
 #ifndef NX_IP_PERIODIC_RATE
-#define NX_IP_PERIODIC_RATE 100             /* Default IP periodic rate of 1 second for 
-                                               ports with 10ms timer interrupts.  This 
+#define NX_IP_PERIODIC_RATE 1000             /* Default IP periodic rate of 1 second for 
+                                               ports with 1ms timer interrupts.  This 
                                                value may be defined instead at the 
                                                command line and this value will not be
                                                used.  */
