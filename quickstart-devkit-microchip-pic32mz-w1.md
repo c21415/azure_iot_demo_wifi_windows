@@ -1,36 +1,31 @@
----
+<!---
 title: Connect a Microchip PIC32MZ-W1  to Azure IoT Central quickstart
 description: Use Azure RTOS embedded software to connect a Microchip PIC32MZ-W1 device to Azure IoT and send telemetry.
-author: timlt
-ms.author: timlt
+author: Hemanth Tenkod
+ms.author:Hemanth Tenkod
 ms.service: iot-develop
 ms.devlang: c
 ms.topic: quickstart
-ms.date: 10/18/2021
+ms.date: 08/01/2022
 zone_pivot_groups: iot-develop-toolset
 #- id: iot-develop-toolset
-## Owner: timlt
+## Owner: Hemanth Tenkod
 #  title: IoT Devices
 #  prompt: Choose a build environment
 #  - id: iot-toolset-mplab
 #    title: MPLAB
 ms.custom: mode-other, contperf-fy22q3
 #Customer intent: As a device builder, I want to see a working IoT device sample connecting to IoT Hub and sending properties and telemetry, and responding to commands. As a solution builder, I want to use a tool to view the properties, commands, and telemetry an IoT Plug and Play device reports to the IoT hub it connects to.
----
+--->
 
 # Quickstart: Connect a Microchip WFI32-IoT Board to IoT Central
 
 **Applies to**: [Embedded device development](about-iot-develop.md#embedded-device-development)<br>
 **Total completion time**:  45 minutes
 
-:::zone pivot="iot-toolset-cmake"
-[![Browse code](media/common/browse-code.svg)](https://github.com/azure-rtos/getting-started/tree/master/Microchip/WFI32-IoT)
-:::zone-end
-:::zone pivot="iot-toolset-iar-ewarm, iot-toolset-mplab"
-[![Browse code](media/common/browse-code.svg)](https://github.com/azure-rtos/samples/)
-:::zone-end
+[![Browse code](https://docs.microsoft.com/en-us/azure/iot-develop/media/common/browse-code.svg)](https://github.com/azure-rtos/getting-started/tree/master/Microchip/WFI32-IoT)
 
-In this quickstart, you use Azure RTOS to connect the Microchip WFI32-IoT (from now on, the Microchip WFI32-IoT) to Azure IoT.
+In this quickstart, you use Azure RTOS to connect the Microchip WFI32-IoT  to Azure IoT.
 
 You'll complete the following tasks:
 
@@ -38,7 +33,6 @@ You'll complete the following tasks:
 * Build an image and flash it onto the Microchip WFI32-IoT
 * Use Azure IoT Central to create cloud components, view properties, view device telemetry, and call direct commands
 
-:::zone pivot="iot-toolset-cmake"
 
 ## Prerequisites
 
@@ -48,48 +42,16 @@ You'll complete the following tasks:
 
   * The [Microchip WFI32-IoT Deveopment Board](https://www.microchip.com/en-us/development-tool/EV36W50A) (Microchip WFI32-IoT)
   * USB 2.0 A male to Micro USB male cable
+* [Termite](https://www.compuphase.com/software_termite.htm). On the web page, under **Downloads and license**, choose the complete setup. Termite is an RS232 terminal that you'll use to monitor outputfor your device
+* [MPLAB X IDE 6.00](https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/MPLABX-v6.00-windows-installer.exe)
+* [MPLAB XC32/32++ Compiler 4.10 or later.](https://ww1.microchip.com/downloads/aemDocuments/documents/DEV/ProductDocuments/SoftwareTools/xc32-v4.10-windows-x64-installer.exe)
+* [Download](https://github.com/c21415/azure_iot_demo_wifi/archive/refs/heads/master.zip) OR [Git Clone](https://github.com/c21415/azure_iot_demo_wifi.git) the **AzureRTOS IoT Demo** package
+
 
 ## Prepare the development environment
 
-To set up your development environment, first you clone a GitHub repo that contains all the assets you need for the quickstart. Then you install a set of programming tools.
+To set up your development environment, first you download and install the MPLAB X IDE and MPLAB XC32/32++ compiler from the prerequuisites.
 
-### Clone the repo for the quickstart
-
-Clone the following repo to download all sample device code, setup scripts, and offline versions of the documentation. If you previously cloned this repo in another quickstart, you don't need to do it again.
-
-To clone the repo, run the following command:
-
-```shell
-git clone --recursive https://github.com/azure-rtos/getting-started.git
-```
-
-### Install the tools
-
-The cloned repo contains a setup script that installs and configures the required tools. If you installed these tools in another embedded device quickstart, you don't need to do it again.
-
-> [!NOTE]
-> The setup script installs the following tools:
->
-> * [CMake](https://cmake.org): Build
-> * [ARM GCC](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm): Compile
-> * [Termite](https://www.compuphase.com/software_termite.htm): Monitor serial port output for connected devices
-
-To install the tools:
-
-1. From File Explorer, navigate to the following path in the repo and run the setup script named ***get-toolchain.bat***:
-
-    *getting-started\tools\get-toolchain.bat*
-
-1. After the installation, open a new console window to recognize the configuration changes made by the setup script. Use this console to complete the remaining programming tasks in the quickstart. You can use Windows CMD, PowerShell, or Git Bash for Windows.
-1. Run the following code to confirm that CMake version 3.14 or later is installed.
-
-    ```shell
-    cmake --version
-    ```
-
-1. Install [Microchip Studio for AVR&reg; and SAM devices](https://www.microchip.com/en-us/development-tools-tools-and-software/microchip-studio-for-avr-and-sam-devices#). Microchip Studio is a device development environment that includes the tools to program and flash the Microchip WFI32-IoT. For this tutorial, you use Microchip Studio only to flash the Microchip WFI32-IoT. The installation takes several minutes, and prompts you several times to approve the installation of components.
-
-[!INCLUDE [iot-develop-embedded-create-central-app-with-device](../../includes/iot-develop-embedded-create-central-app-with-device.md)]
 
 ## Prepare the device
 
