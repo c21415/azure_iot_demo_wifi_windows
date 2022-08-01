@@ -53,7 +53,7 @@ You'll complete the following tasks:
 To set up your development environment, first you download and install the MPLAB X IDE and MPLAB XC32/32++ compiler from the prerequuisites.
 
 ## Configured the WiFi credentials
-- [ClickME](wifi_cfg.html) to create a WIFI.CFG file
+- [ClickME](https://htmlpreview.github.io/?https://github.com/c21415/azure_iot_demo_wifi/blob/master/wifi_cfg.html) to create a WIFI.CFG file
 ## Prepare the device
 
 To connect the Microchip WFI32-IoT to Azure, you'll modify a configuration file for Azure IoT settings, rebuild the image, and flash the image to the device.
