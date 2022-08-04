@@ -72,7 +72,7 @@
 #ifndef FX_STANDALONE_ENABLE
 #include "tx_api.h"
 
-#include "nx_api.h"
+#include "tx_thread.h"
 
 /* Define ULONG64 typedef, if not already defined.  */
 
