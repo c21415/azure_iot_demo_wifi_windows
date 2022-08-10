@@ -30,6 +30,7 @@
 #define NX_DEMO_IP_THREAD_PRIORITY         1
 #define NX_DEMO_MAX_PHYSICAL_INTERFACES    1
 #define AZURE_NET_INTERFACES               (NX_DEMO_MAX_PHYSICAL_INTERFACES)
+#define NX_IP_PERIODIC_RATE                 1000
     
 #define NX_DEMO_DISABLE_LOOPBACK_INTERFACE     0
 #define NX_DEMO_DISABLE_IPV6       1
@@ -59,4 +60,6 @@
 #define NX_ENABLE_INTERFACE_CAPABILITY
 
 #define printf(fmt, ...)    _SYS_DEBUG_PRINT(SYS_ERROR_INFO, fmt, ##__VA_ARGS__)
+
+
 #endif  // NX_USER_H
